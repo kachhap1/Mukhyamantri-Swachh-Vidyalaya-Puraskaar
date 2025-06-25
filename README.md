@@ -1,0 +1,2 @@
+# Mukhyamantri Swachh Vidyalaya-Puraskaar
+ 
