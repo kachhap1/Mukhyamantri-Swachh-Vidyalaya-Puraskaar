@@ -1,0 +1,27 @@
+.footer{
+    background-color: rgb(47, 75, 75);
+    color:aliceblue;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-text{
+    font-size: 15vm;
+    color: #ccc;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

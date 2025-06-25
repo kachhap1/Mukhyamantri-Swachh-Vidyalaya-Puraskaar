@@ -1,0 +1,35 @@
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon {
+  cursor: pointer;
+  color: #fff; /* White icon */
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 120px;
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}

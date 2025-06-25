@@ -1,0 +1,97 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px; /* Adjust this based on your logo size */
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfefe;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.logo {
+  height: 100px; /* Adjust based on your design */
+  width: auto;
+  object-fit: contain; /* Prevent stretching */
+}
+
+.header1 {
+  background-color: rgb(47, 75, 75);
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.nav {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns the navigation to the right */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adds spacing between menu items */
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px; /* Increases clickable area */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: yellow;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background: rgb(47, 75, 75);
+    width: 100%;
+    top: 80px;
+    left: 0;
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    height: 60px; /* Smaller logo for mobile */
+  }
+}
